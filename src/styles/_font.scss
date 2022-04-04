@@ -1,0 +1,20 @@
+$font_url : "//www.gomlab.com/gomlab_v2/ui/font/";
+// $font_url : "/font/";
+
+$vs : "?v=20220401";
+
+$family :'NotoSansCJK',  'Lucida Grande', 'Open Sans', 'roboto', 'AppleGothic', 'Arial', 'Meiryo', 'Hiragino Kaku Gothic Pro', 'NanumBarunGothic','Malgun Gothic', dotum, "돋음",'sans-serif';
+
+@mixin setFont($nm, $fileNm, $weight:100){
+    @font-face {
+        font-family: $nm;
+        font-weight: $weight;
+        font-display: block;
+        src: local("※"), url($font_url + $fileNm + ".woff2"+ $vs) format('woff2'),
+            local("※"), url($font_url + $fileNm + ".woff"+ $vs) format("woff");
+    }
+}
+@mixin fontfamily($weight:100, $font:$family) {
+    font-weight: $weight;
+    font-family: $font !important;
+}

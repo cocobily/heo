@@ -1,0 +1,40 @@
+header{
+  padding: 13px 40px;
+}
+.header_wrap{
+  overflow: hidden;
+  height: 47px;
+  vertical-align: middle;
+  .logo{
+    display: inline-block;
+    width: 107px;
+    height: 17px;
+    background: #000;
+    line-height: 1;
+    font-size: 0;
+    a{
+      display: inline-block;
+      width: 107px;
+    height: 17px;
+    }
+  }
+  .right{
+    // display: inline-block;
+    float: right;
+  }
+  .link_gomlab{
+    display: inline-block;
+    height: 47px;
+    padding: 0 23px;
+    background: #F2F4F6;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 47px;
+    color: $color1;
+    font-weight: 600;
+    &:hover{
+      background: $point;
+      color: $white;
+    }
+  }
+}
