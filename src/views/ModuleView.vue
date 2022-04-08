@@ -1,15 +1,9 @@
 <template>
-  <div>
-    module
-  </div>
+	<div>module</div>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
