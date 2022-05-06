@@ -49,3 +49,39 @@
 	clear: both;
 	content: "";
 }
+@mixin scrollStyle{
+	// webkit
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+		background: $white;
+		cursor: pointer;
+		transition-duration: 0.5s;
+	}
+	&::-webkit-scrollbar-corner {
+		background: #262a33;
+	}
+	&::-webkit-scrollbar-button:start:decrement,
+	::-webkit-scrollbar-button:end:increment {
+		display: none;
+	}
+	&::-webkit-scrollbar-track {
+		position: relative;
+		top: 0;
+		border-radius: 0;
+	}
+	&::-webkit-scrollbar-thumb {
+		height: 50px;
+		width: 50px;
+		background: $color4;
+		border-radius: 0;
+		cursor: pointer;
+	}
+	&::-webkit-scrollbar-corner {
+		background-color: $white;
+	}
+	// moz
+	scrollbar-color: $color4 $white;
+	scrollbar-width: thin;
+	scrollbar-height: thin;
+}

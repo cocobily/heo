@@ -1,10 +1,10 @@
 <template>
-	<div>module</div>
+	<div>프로젝트</div>
 </template>
 
 <script>
 export default {
-	name: 'ModuleView',
+	name: 'ScreenLayout',
 };
 </script>
 

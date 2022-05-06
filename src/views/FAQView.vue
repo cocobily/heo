@@ -3,7 +3,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+	name: 'FAQView',
+};
 </script>
 
 <style lang="scss" scoped></style>

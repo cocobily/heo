@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+// import store from '@/store/index';
 
 Vue.use(VueRouter);
 
@@ -7,26 +8,30 @@ const routes = [
 	{
 		path: '/modules',
 		name: 'Module',
-		component: () =>
-			import(/* webpackChunkName: "group-etc" */ '../views/ModuleView.vue'),
+		component: () => import(/* webpackChunkName: "group-etc" */ '../views/ModuleView.vue'),
 		meta: {
 			layout: true,
 		},
 	},
 	{
-		path: '/',
-		name: 'home',
-		component: () =>
-			import(/* webpackChunkName: "group-etc" */ '../views/HomeView.vue'),
+		path: '/FAQ',
+		name: 'FAQ',
+		component: () => import(/* webpackChunkName: "about" */ '../views/FAQView.vue'),
 	},
 	{
-		path: '/FAQView',
-		name: 'FAQ',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () =>
-			import(/* webpackChunkName: "about" */ '../views/FAQView.vue'),
+		path: '/',
+		name: 'AboutGomMixMax',
+		component: () => import(/* webpackChunkName: "about" */ '../views/AboutGomMixMax.vue'),
+	},
+	{
+		path: '/Home-Layout',
+		name: 'HomeLayout',
+		component: () => import(/* webpackChunkName: "about" */ '../views/HomeLayout.vue'),
+	},
+	{
+		path: '/Screen-Layout',
+		name: 'ScreenLayout',
+		component: () => import(/* webpackChunkName: "about" */ '../views/ScreenLayout.vue'),
 	},
 ];
 

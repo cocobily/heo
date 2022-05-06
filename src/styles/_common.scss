@@ -1,0 +1,39 @@
+.btn{
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+	&:hover{
+		background: rgba(242, 54, 86, 1);
+		box-shadow: 0px 4px 16px rgba(177, 28, 54, 0.5);
+		transition: background 0.3s;
+	}
+	& + .btn{
+		margin-left: 20px;
+	}
+}
+.btn_paging {
+	width: 48px;
+	height: 48px;
+	background: $white;
+	box-shadow: 0px 4px 16px rgba(43, 61, 85, 0.2);
+	border-radius: 10px;
+	
+}
+.btn_top{
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	width: 48px;
+	height: 48px;
+	background: $white;
+	box-shadow: 0px 4px 16px rgba(43, 61, 85, 0.2);
+	border-radius: 10px;
+}
+.inp_sch{
+	width: 300px;
+	height: 47px;
+	padding: 14px 15px 12px 46px;
+	border: 1px solid #E5E5E5;
+	border-radius: 10px;
+	box-sizing: border-box;
+}

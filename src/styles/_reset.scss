@@ -104,42 +104,4 @@ a.disabled {
 	margin: 0px !important;
 	text-indent: 2000em;
 }
-// pc 스크롤바
-// webkit
-::-webkit-scrollbar {width: 4px; height:4px;background: $white; cursor: pointer; transition-duration: .5s;}
-::-webkit-scrollbar-corner{background:#262a33;}
-::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display: none; }
-::-webkit-scrollbar-track {position:relative;top:0;border-radius:0;}
-::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: $color4;border-radius:0;cursor: pointer;}
-::-webkit-scrollbar-corner {background-color: $white;}
-// moz
-body, html,input,select,textarea{
-	scrollbar-color: $color4 $white;
-	scrollbar-width: thin;
-	scrollbar-height: thin;
-}
-// 스크롤바 plugin
-.ps__thumb-x, .ps__thumb-y {
-	width: 4px;
-	border-radius: 2px;
-	background-color: $color4;
-}
-.ps__rail-y.ps--clicking .ps__thumb-y, .ps__rail-y:focus>.ps__thumb-y, .ps__rail-y:hover>.ps__thumb-y {
-	width: 12px;
-	border-radius: 3px;
-	background-color: $color4;
-}
-.ps:hover > .ps__rail-x,
-.ps:hover > .ps__rail-y,
-.ps--focus > .ps__rail-x,
-.ps--focus > .ps__rail-y,
-.ps--scrolling-x > .ps__rail-x,
-.ps--scrolling-y > .ps__rail-y {
-  background: rgba(0,0,0,0);
-}
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
