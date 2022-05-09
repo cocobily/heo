@@ -1,9 +1,8 @@
 <template>
 	<div>
 		<h2>제품소개</h2>
-		<!-- <p>{{ data.message.hello }}</p> -->
-		<!-- <p>{{ $t('meta.main-title') }}</p> -->
-		<button @click="$store.commit('increment')">증가</button>
+		<p>{{ $t('message.hello') }}</p>
+		<p>{{ $t('meta.main-title') }}</p>
 	</div>
 </template>
 
@@ -13,11 +12,7 @@ export default {
 	data() {
 		return {};
 	},
-	computed: {
-		count() {
-			return this.$store.state.count;
-		},
-	},
+	computed: {},
 };
 </script>
 
