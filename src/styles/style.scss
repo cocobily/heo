@@ -1,4 +1,7 @@
-@import 'variable', 'mixin', 'font', 'reset', 'svgicon', 'layout', 'common';
+@import 'font', 'variable',  'mixin',  'reset', 'svgicon', 'layout', 'common';
+
+@include setFont("NotoSansCJK", "NotoSansCJK_Light", 100);
+@include setFont("NotoSansCJK", "NotoSansCJK_Medium", 600);
 
 //한국어에서만 보이게
 // html:lang(ko),

@@ -1,7 +1,6 @@
 <template>
 	<div>
 		<h2>제품소개</h2>
-		<p>{{ $t('message.hello') }}</p>
 		<p>{{ $t('meta.main-title') }}</p>
 	</div>
 </template>

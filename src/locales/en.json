@@ -1,12 +1,43 @@
 {
-	"message" : {
-		"hello": "hello, buddy!"
-	},
 	"meta": {
 		"main-title": "Video editing assets market for GOM Mix Pro users",
 		"title-template": "ㅣGOM Mix Market",
 		"main-description": "This service provides free or paid video editing resources such as videos, audio, icons, fonts for free video editing program, GOM Mix Pro users.",
 		"main-keywords": "youtube, free video editing program, video editing, video editing software, video editing program, video editor, videoedit, youtube video editing, makevideo, vlog, gomplayer, gommixpro, gomaudio, gomcam, vlogedit, vlogger, how to make a youtube video, how to make a video, video effects, video editing skill",
 		"main-url": "/?language=en"
-	}
+	},
+	"GNB_NAME": {
+    "TXT1": "제품 소개",
+    "TXT2": "홈",
+    "TXT3": "프로젝트",
+    "TXT4": "빠른 학습",
+    "TXT4_1": "간단한 동영상 제작",
+    "TXT4_2": "단축키",
+    "TXT5": "기능 학습",
+    "TXT5_1": "클립",
+    "TXT5_2": "키프레임",
+    "TXT5_3": "모션 그래프",
+    "TXT5_4": "프레임 컨트롤",
+    "TXT5_5": "트림",
+    "TXT6": "탑바 메뉴 패널",
+    "TXT7": "소스 및 효과 패널",
+    "TXT7_1": "클립 탭",
+    "TXT7_2": "텍스트 탭",
+    "TXT7_3": "오브젝트 탭",
+    "TXT7_4": "이펙트 탭",
+    "TXT7_5": "오버레이 탭",
+    "TXT7_6": "클립 트랜지션 탭",
+    "TXT8": "미리보기 패널",
+    "TXT9": "타임라인 패널",
+    "TXT9_1": "타임라인 기본 구성",
+    "TXT9_2": "트랙 컨트롤 영역",
+    "TXT9_3": "타임라인 작업 영역",
+    "TXT10": "설정",
+    "TXT10_1": "환경 설정",
+    "TXT10_2": "프로젝트 설정",
+    "TXT11": "내보내기",
+    "TXT11_1": "내보내기",
+    "TXT11_2": "고급",
+    "TXT12": "라이선스"
+  }
 }

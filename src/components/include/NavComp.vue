@@ -1,38 +1,59 @@
 <template>
 	<nav>
 		<div class="nav_inner">
-			<router-link to="/">제품 소개</router-link>
-			<router-link to="/Home-layout">홈</router-link>
-			<router-link to="/Screen-Layout">프로젝트</router-link>
+			<ul class="dep1">
+				<li>
+					<router-link to="/" :class="{ on: $route.name === 'AboutGomMixMax' }"
+						><span class="ico_gnb1"></span>{{ $t('GNB_NAME.TXT1') }}</router-link
+					>
+				</li>
+				<li>
+					<router-link to="/Home-layout" :class="{ on: $route.name === 'HomeLayout' }"
+						><span class="ico_gnb2"></span>{{ $t('GNB_NAME.TXT2') }}</router-link
+					>
+				</li>
+				<li>
+					<router-link to="/Screen-Layout" :class="{ on: $route.name === 'ScreenLayout' }"
+						><span class="ico_gnb3"></span>{{ $t('GNB_NAME.TXT3') }}</router-link
+					>
+				</li>
+				<li class="has_sub">
+					<router-link to="/Quick-Learning" :class="{ on: $route.name === 'QuickLearning' }"
+						><span class="ico_gnb4"></span>{{ $t('GNB_NAME.TXT4') }}</router-link
+					>
+					<ul class="dep2">
+						<li>
+							<router-link to="/">{{ $t('GNB_NAME.TXT4_1') }}</router-link>
+						</li>
+						<li>
+							<router-link to="/">{{ $t('GNB_NAME.TXT4_2') }}</router-link>
+						</li>
+					</ul>
+				</li>
+				<li class="has_sub">
+					<router-link to="/FAQ" :class="{ on: $route.name === 'FAQ' }"
+						><span class="ico_gnb4"></span>{{ $t('GNB_NAME.TXT5') }}</router-link
+					>
+					<ul class="dep2">
+						<li>
+							<router-link to="/">{{ $t('GNB_NAME.TXT5_1') }}</router-link>
+						</li>
+						<li>
+							<router-link to="/">{{ $t('GNB_NAME.TXT5_2') }}</router-link>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 	</nav>
 </template>
 
 <script>
-export default {};
+export default {
+	data: function () {
+		return {};
+	},
+};
 </script>
 
-<style lang="scss" scoped>
-@import '@/styles/_variable.scss';
-@import '@/styles/_mixin.scss';
-
-nav {
-	position: fixed;
-	left: 0;
-	top: $header_h;
-	bottom: 0;
-	overflow: auto;
-	border-right: 1px solid #e5e5e5;
-	@include scrollStyle;
-}
-.nav_inner {
-	width: 300px;
-	height: 2000px;
-	padding: 30px;
-	background: $white;
-	box-sizing: border-box;
-	a {
-		display: block;
-	}
-}
-</style>
+<style lang="scss" scoped></style>

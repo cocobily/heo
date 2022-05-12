@@ -7,9 +7,11 @@ header{
   background: $white;
 }
 .header_wrap{
-  overflow: hidden;
   height: 49px;
   vertical-align: middle;
+  &::after{
+    @include clear;
+  }
   .logo{
     display: inline-block;
     width: 160px;
@@ -26,27 +28,58 @@ header{
   }
   .right{
     float: right;
-    width: 600px;
     .bx_search{
       display: inline-block;
     }
-    .link{
+  }
+  .link{
+    display: inline-block;
+    margin-left: 30px;
+    a{
+      padding: 0 10px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    .link_gomlab{
       display: inline-block;
+      height: 47px;
+      padding: 0 23px;
+      margin-left: 30px;
+      background: #F2F4F6;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 47px;
+      color: $color1;
+      font-weight: 600;
+      font-size: 15px;
+      &:hover{
+        background: $point;
+        color: $white;
+      }
     }
   }
-  .link_gomlab{
-    display: inline-block;
-    height: 47px;
-    padding: 0 23px;
-    background: #F2F4F6;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 47px;
-    color: $color1;
-    font-weight: 600;
-    &:hover{
-      background: $point;
-      color: $white;
+  .bx_search{
+    position: relative;
+    .ico_sch{
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      margin-top: -10px;
+      width: 21px;
+      height: 21px;
+      background: ico_sch() 50% 50% no-repeat;
+    }
+    .inp_sch{
+      font-size: 15px;
+      color: $black;
+      &:hover{
+        box-shadow: 0px 4px 10px #2B3D551A;
+      }
+      &:focus, &.on{
+        border-color: #bbb;
+      }
     }
   }
 }
@@ -58,5 +91,88 @@ header{
     margin: 0 auto;
     max-width: 1000px;
     padding: 60px 20px 0;
+  }
+}
+nav {
+	position: fixed;
+	left: 0;
+	top: $header_h;
+	bottom: 0;
+	overflow: auto;
+	border-right: 1px solid #e5e5e5;
+	@include scrollStyle;
+}
+.nav_inner {
+	width: 265px;
+	height: 2000px;
+	padding: 16px;
+	background: $white;
+	box-sizing: border-box;
+	.dep1 > li{
+    min-height: 47px;
+    > a{
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      padding: 13px 14px;
+      box-sizing: border-box;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 20px;
+      color: $color1;
+      border-radius: 10px;
+    }
+  }
+  .has_sub{
+    position: relative;
+    a{
+      &:before{
+        display: inline-block;
+        content: '';
+        position: absolute;
+        top: 16px;
+        right: 14px;
+        width: 15px;
+        height: 15px;
+        background: #fff gnb_unfold() 50% 50% no-repeat;
+      }
+    }
+    .on{
+      &:before{
+        transform: rotate(180deg);
+      }
+      & + .dep2{
+        display: block;
+        transition: height 10s ease;
+        height: auto;
+      }
+    } 
+  }
+  .dep2{
+    display: none;
+    height: 0;
+  }
+  .on{
+    background: #F7F7F7;
+  }
+  span{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin-right: 13px;
+    background: #000;
+    vertical-align: bottom;
+  }
+  .ico_gnb1{
+    background: ico_gnb1() 50% 50% no-repeat;
+  }
+  .ico_gnb2{
+    background: ico_gnb2() 50% 50% no-repeat;
+  }
+  .ico_gnb3{
+    background: ico_gnb3() 50% 50% no-repeat;
+  }
+  .ico_gnb4{
+    background: ico_gnb4() 50% 50% no-repeat;
   }
 }

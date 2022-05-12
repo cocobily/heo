@@ -33,6 +33,11 @@ const routes = [
 		name: 'ScreenLayout',
 		component: () => import(/* webpackChunkName: "about" */ '../views/ScreenLayout.vue'),
 	},
+	{
+		path: '/Quick-Learning',
+		name: 'QuickLearning',
+		component: () => import(/* webpackChunkName: "about" */ '../views/QuickLearning.vue'),
+	},
 ];
 
 const router = new VueRouter({

@@ -8,8 +8,8 @@ import '@/styles/style.scss';
 Vue.config.productionTip = false;
 
 new Vue({
-	i18n,
 	router,
+	i18n,
 	store,
 	render: h => h(App),
 }).$mount('#app');
