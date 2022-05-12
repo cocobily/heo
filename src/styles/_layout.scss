@@ -123,9 +123,22 @@ nav {
       border-radius: 10px;
     }
   }
+  .dep2{
+    li{
+      > a{
+        display: inline-block;
+        margin-left: 42px;
+        padding: 13px 0;
+        width: 100%;
+        color: #555;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
   .has_sub{
     position: relative;
-    a{
+    >a{
       &:before{
         display: inline-block;
         content: '';
@@ -134,12 +147,14 @@ nav {
         right: 14px;
         width: 15px;
         height: 15px;
-        background: #fff gnb_unfold() 50% 50% no-repeat;
+        background: gnb_unfold() 50% 50% no-repeat;
+        transition: transform .5s;
       }
     }
     .on{
       &:before{
         transform: rotate(180deg);
+        transition: transform .5s;
       }
       & + .dep2{
         display: block;

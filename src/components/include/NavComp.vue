@@ -23,10 +23,10 @@
 					>
 					<ul class="dep2">
 						<li>
-							<router-link to="/">{{ $t('GNB_NAME.TXT4_1') }}</router-link>
+							<router-link to="/1">{{ $t('GNB_NAME.TXT4_1') }}</router-link>
 						</li>
 						<li>
-							<router-link to="/">{{ $t('GNB_NAME.TXT4_2') }}</router-link>
+							<router-link to="/2">{{ $t('GNB_NAME.TXT4_2') }}</router-link>
 						</li>
 					</ul>
 				</li>
@@ -36,10 +36,10 @@
 					>
 					<ul class="dep2">
 						<li>
-							<router-link to="/">{{ $t('GNB_NAME.TXT5_1') }}</router-link>
+							<router-link to="/3">{{ $t('GNB_NAME.TXT5_1') }}</router-link>
 						</li>
 						<li>
-							<router-link to="/">{{ $t('GNB_NAME.TXT5_2') }}</router-link>
+							<router-link to="/4">{{ $t('GNB_NAME.TXT5_2') }}</router-link>
 						</li>
 					</ul>
 				</li>
@@ -52,6 +52,11 @@
 export default {
 	data: function () {
 		return {};
+	},
+	methods: {
+		toggleClass(e) {
+			e.target.className = e.target.className === 'on' ? '' : 'on';
+		},
 	},
 };
 </script>
